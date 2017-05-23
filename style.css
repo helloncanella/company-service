@@ -1,0 +1,248 @@
+.about > .title {
+  border-bottom: 1px solid #53BE90;
+  margin-bottom: 3rem;
+}
+
+.about .characterists .characterist {
+  margin-bottom: 3rem;
+}
+.resources {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  counter-reset: item;
+}
+
+.resources .resource {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.resources .resource::before {
+  position: relative;
+  padding-right: 0.8rem;
+  color: #EB5D5F;
+  counter-increment: item;
+  content: counter(item);
+}
+
+.resources .resource .description {
+  margin-top: -3px;
+}
+
+.resources .resource button {
+  margin-left: 0.75rem;
+}
+
+.resources .resource ul.features {
+  list-style: none;
+  padding: 0;
+  padding-top: 1.5rem;
+  margin-left: 1.25rem;
+}
+
+.resources .resource ul.features li.feature {
+  display: flex;
+}
+
+.resources .resource ul.features li.feature::before {
+  padding-right: 1rem;
+  content: '';
+  background: #53BE90;
+  padding-right: 0.4rem;
+  display: inline-block;
+  margin-left: -8px;
+  /* same as padding-left set on li */
+  height: 8px;
+  width: 8px;
+  border-top-left-radius: 50%;
+}
+
+.resources .resource ul.features li.feature .content {
+  margin-top: -10px;
+  margin-bottom: 1.2rem;
+  margin-left: 1rem;
+}
+
+.resources .resource ul.features li.feature .content .name, .resources .resource ul.features li.feature .content .description {
+  display: inline;
+}
+
+.resources .resource ul.features li.feature .content .name {
+  font-weight: 700;
+}
+
+.resources .resource ul.features li.feature .content .name::after {
+  content: ' ';
+}
+.invitation {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.invitation p {
+  color: #525F7F;
+}
+
+.invitation .column {
+  display: flex;
+  flex-direction: column;
+}
+
+.invitation .column button {
+  margin-top: 1.5rem;
+  align-self: flex-end;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 27px;
+  }
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+  h2 {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  h2 {
+    font-size: 19px;
+  }
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 640px) {
+  h3 {
+    font-size: 19px;
+  }
+}
+
+h4 {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 19px;
+  font-weight: 400;
+  color: #D9D9D9;
+}
+
+@media screen and (max-width: 640px) {
+  p {
+    font-size: 17px;
+  }
+}
+
+p.small {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 640px) {
+  p.small {
+    font-size: 15px;
+  }
+}
+
+a {
+  font-size: 17pt;
+  font-weight: 400;
+  color: #00A5E9;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.inherit {
+  color: inherit;
+  font-size: inherit;
+}
+
+button {
+  font-size: 17pt;
+  font-weight: 400;
+  padding: 10px, 15px;
+  background-color: #EB5D5F;
+  border: 1px solid #EB5D5F;
+  border-radius: 19px;
+  max-width: 215px;
+}
+
+button:hover {
+  color: #C14E4F;
+  border: 1px solid #C14E4F;
+}
+
+button {
+  width: 100%;
+  color: inherit;
+  cursor: pointer;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+button a {
+  color: inherit;
+  color: white;
+}
+
+button a:hover {
+  color: #e6e6e6;
+  text-decoration: none;
+}
+
+.categoryIcons {
+  height: 35px;
+  width: 35px;
+  border: 1px solid #53BE90;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s linear;
+  background-color: #53BE90;
+  color: white;
+  display: flex;
+}
+
+body {
+  padding-top: 2rem;
+}
+
+p {
+  color: #262626;
+}
+
+.resources {
+  background: whitesmoke;
+}
+.redBg {
+  background-color: red;
+  border-radius: 51px;
+  color: white;
+  padding: 5px;
+}
